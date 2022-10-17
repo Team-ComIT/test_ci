@@ -1,0 +1,23 @@
+{
+  "name": "comit_ci_test",
+  "version": "1.0.0",
+  "repository": "https://github.com/Team-ComIT/comIT_Frontend_DesignSystem.git",
+  "author": "kimulchan <leerabi577@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build:all": "yarn workspaces foreach -pt run build"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/**"
+    ]
+  },
+  "packageManager": "yarn@3.2.4",
+  "dependencies": {
+    "@changesets/cli": "^2.25.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.8.4"
+  }
+}
